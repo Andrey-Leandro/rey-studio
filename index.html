@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf7f4">
+    <meta name="description" content="Rey´nails — Nail Designer. Conheça os serviços, veja inspirações e solicite um agendamento pelo WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rey´nails | Seu momento de se cuidar">
+    <meta property="og:description" content="Seu momento de beleza começa aqui. Conheça a Rey´nails.">
+    <title>Rey´nails | Nail Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer=""></script>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+
+    <div class="announcement">
+      Um momento especial começa por você
+      <span aria-hidden="true">✦</span>
+      Agendamentos pelo WhatsApp
+    </div>
+
+    <!-- CABEÇALHO -->
+
+    <header class="site-header" id="topo">
+      <div class="nav container">
+        <a class="logo" href="#topo" data-scroll-top="" aria-label="Rey´nails, voltar ao início">
+          rey<span>´</span>nails<span class="logo-dot">.</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Menu principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Inspirações</a>
+          <a href="#espaco">Nosso espaço</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="btn btn-dark nav-book" data-book="">
+            Agendar <span aria-hidden="true">↗</span>
+          </button>
+
+          <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Menu para celular" hidden="">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Inspirações</a>
+        <a href="#espaco">Nosso espaço</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+
+        <button type="button" class="btn btn-dark" data-book="">
+          Agendar horário ↗
+        </button>
+      </nav>
+    </header>
+
+    <main id="principal">
+
+      <!-- INÍCIO -->
+
+      <section class="hero container" aria-labelledby="heroTitle">
+        <div class="hero-copy reveal">
+          <span class="kicker">✦ NAIL DESIGNER &amp; BEAUTY</span>
+
+          <h1 id="heroTitle">
+            Pequenos detalhes.<br>
+            <em>Grandes encantos.</em>
+          </h1>
+
+          <p>
+            Um toque de beleza, um momento só seu.
+            Conheça a Rey´nails e encontre a inspiração
+            perfeita para suas unhas.
+          </p>
+
+          <div class="hero-actions">
+            <button type="button" class="btn btn-dark" data-book="">
+              Agendar meu momento
+              <span aria-hidden="true">↗</span>
+            </button>
+
+            <a class="text-link" href="#galeria">
+              Ver inspirações ↗
+            </a>
+          </div>
+
+          <div class="hero-note">
+            ✳ <span>Seu momento de autocuidado começa aqui.</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-frame image-frame">
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Fotografia ilustrativa de manicure" fetchpriority="high">
+
+            <span class="image-fallback" aria-hidden="true">
+            ♡
+            <small>Seu momento de beleza</small>
+          </span>
+          </div>
+
+          <div class="floating-tag" aria-hidden="true">
+            <span>beauty in</span>
+            <strong>every detail</strong>
+            <i>✦</i>
+          </div>
+
+          <div class="hero-index">
+            REY´NAILS · BEAUTY STUDIO
+          </div>
+        </div>
+      </section>
+
+      <!-- FAIXA ANIMADA -->
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>
+          SELF-CARE ✧ PRETTY NAILS ✧ GOOD VIBES ✧
+        </span>
+          <span>
+          SELF-CARE ✧ PRETTY NAILS ✧ GOOD VIBES ✧
+        </span>
+        </div>
+      </div>
+
+      <!-- SERVIÇOS -->
+
+      <section class="section container" id="servicos" aria-labelledby="servicesTitle">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">01 / NOSSOS SERVIÇOS</span>
+            <h2 id="servicesTitle">
+              Seu estilo, <em>suas unhas.</em>
+            </h2>
+          </div>
+
+          <p>
+            Escolha o cuidado que combina com você.
+            Toque em um serviço para solicitar seu horário.
+          </p>
+        </div>
+
+        <p class="demo-note">
+          *Preços fictícios para demonstração;
+          confirme os valores pelo WhatsApp.
+        </p>
+
+        <div class="services-grid" id="servicesGrid"></div>
+      </section>
+
+      <!-- FAIXA DECORATIVA -->
+
+      <div class="feature-strip" aria-hidden="true">
+        <div class="container feature-inner">
+          <span>um tempo pra você</span>
+          <b>✳</b>
+          <span>do seu jeitinho</span>
+          <b>✳</b>
+          <span>beleza nos detalhes</span>
+        </div>
+      </div>
+
+      <!-- GALERIA -->
+
+      <section class="section container" id="galeria" aria-labelledby="galleryTitle">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">02 / NAIL INSPO</span>
+            <h2 id="galleryTitle">
+              Uma dose de <em>inspiração.</em>
+            </h2>
+          </div>
+
+          <p>
+            Ideias delicadas, modernas e cheias de personalidade
+            para suas próximas unhas.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar inspirações">
+
+          <button type="button" class="chip active" data-filter="todos" aria-pressed="true">
+            Todas
+          </button>
+
+          <button type="button" class="chip" data-filter="delicadas" aria-pressed="false">
+            Delicadas
+          </button>
+
+          <button type="button" class="chip" data-filter="classicas" aria-pressed="false">
+            Clássicas
+          </button>
+
+          <button type="button" class="chip" data-filter="modernas" aria-pressed="false">
+            Modernas
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <p class="demo-note">
+          Imagens apenas ilustrativas.
+          Substitua por fotos reais autorizadas da Rey´nails
+          antes de divulgar como portfólio.
+        </p>
+      </section>
+
+      <!-- NOSSO ESPAÇO -->
+
+      <section class="studio-section" id="espaco" aria-labelledby="studioTitle">
+
+        <div class="container studio-layout">
+          <div class="studio-art reveal">
+            <div class="studio-placeholder">
+              <span class="studio-flower" aria-hidden="true">✿</span>
+              <span>EM BREVE</span>
+              <strong>Nosso cantinho</strong>
+              <small>Adicione uma foto real do estúdio</small>
+            </div>
+
+            <div class="studio-sticker">
+              feito com <em>carinho</em> ♡
+            </div>
+          </div>
+
+          <div class="studio-copy reveal">
+            <span class="kicker">03 / NOSSO ESPAÇO</span>
+
+            <h2 id="studioTitle">
+              Um cantinho<br>
+              pra chamar de <em>seu.</em>
+            </h2>
+
+            <p>
+              A Rey´nails atende em um estúdio localizado
+              em uma galeria comercial. Uma experiência
+              de autocuidado em um ambiente pensado
+              para receber você.
+            </p>
+
+            <p class="muted">
+              Em breve: fotos reais do espaço,
+              da entrada da galeria e orientações para chegar.
+            </p>
+
+            <a class="text-link" href="https://wa.me/5511924872004?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20como%20chegar%20ao%20est%C3%BAdio%20Rey%C2%B4nails." target="_blank" rel="noopener noreferrer">
+              Pedir localização ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+
+      <section class="section container about-section" id="sobre" aria-labelledby="aboutTitle">
+
+        <div class="about-decor" aria-hidden="true">✦</div>
+
+        <div class="about-inner reveal">
+          <span class="kicker">04 / SOBRE A REY´NAILS</span>
+
+          <h2 id="aboutTitle">
+            Mais que unhas bonitas,<br>
+            <em>um momento especial.</em>
+          </h2>
+
+          <p>
+            Rey´nails é um espaço dedicado à beleza
+            das suas mãos e à liberdade de expressar
+            seu estilo. Do clássico ao criativo,
+            cada escolha começa com você.
+          </p>
+
+          <button type="button" class="btn btn-outline" data-book="">
+            Quero agendar ↗
+          </button>
+        </div>
+      </section>
+
+      <!-- DÚVIDAS -->
+
+      <section class="section faq-section" aria-labelledby="faqTitle">
+        <div class="container faq-layout">
+
+          <div class="reveal">
+            <span class="kicker">05 / DÚVIDAS</span>
+
+            <h2 id="faqTitle">
+              Antes de vir,<br>
+              <em>saiba tudo.</em>
+            </h2>
+
+            <p>
+              Respostas rápidas para facilitar
+              seu primeiro contato.
+            </p>
+          </div>
+
+          <div class="faq-list reveal">
+            <details>
+              <summary>
+                Como faço para agendar?
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Clique em “Agendar”, escolha serviço,
+                data e período e envie a solicitação
+                pelo WhatsApp. A confirmação será feita
+                pela profissional.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                O horário é reservado automaticamente?
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Não. Você envia uma preferência e a Rey´nails
+                confirma a disponibilidade pelo WhatsApp.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Onde fica o estúdio?
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                O estúdio fica em uma galeria comercial.
+                Peça o endereço completo e as instruções
+                no WhatsApp.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Os preços mostrados são definitivos?
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Não. Nesta versão os preços são fictícios
+                e devem ser confirmados diretamente
+                com a profissional.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAMADA FINAL -->
+
+      <section class="cta-section container reveal" aria-label="Solicitar agendamento">
+
+        <div class="cta-panel">
+          <div class="cta-glow" aria-hidden="true"></div>
+
+          <span class="kicker">IT'S YOUR TIME ♡</span>
+
+          <h2>
+            Pronta para seu próximo <em>nail day?</em>
+          </h2>
+
+          <p>
+            Seu próximo momento de beleza está
+            a uma mensagem de distância.
+          </p>
+
+          <button type="button" class="btn btn-light" data-book="">
+            Escolher meu horário ↗
+          </button>
+
+          <span class="cta-star" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer" id="contato">
+      <div class="container">
+
+        <div class="footer-top">
+          <div>
+            <a class="logo footer-logo" href="#topo" data-scroll-top="">
+              rey<span>´</span>nails<span class="logo-dot">.</span>
+            </a>
+
+            <p>
+              Um momento só seu.
+              Um detalhe de cada vez.
+            </p>
+          </div>
+
+          <div>
+            <strong>Explore</strong>
+            <a href="#servicos">Serviços</a>
+            <a href="#galeria">Inspirações</a>
+            <a href="#espaco">Nosso espaço</a>
+          </div>
+
+          <div>
+            <strong>Contato</strong>
+
+            <a href="https://wa.me/5511924872004" target="_blank" rel="noopener noreferrer">
+              WhatsApp: (11) 92487-2004 ↗
+            </a>
+
+            <a href="https://instagram.com/asteri_rey" target="_blank" rel="noopener noreferrer">
+              Instagram: @Asteri_rey ↗
+            </a>
+
+            <span>
+            Endereço completo: consulte pelo WhatsApp
+          </span>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>
+          © <span id="year"></span> Rey´nails.
+          Todos os direitos reservados.
+          </span>
+
+          <a href="#topo" data-scroll-top="">
+            Voltar ao topo ↑
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+
+    <a class="whatsapp-float" href="https://wa.me/5511924872004?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Rey%C2%B4nails." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Rey´nails no WhatsApp">
+
+      <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16 3A13 13 0 0 0 4.7 22.4L3 29l6.8-1.8A13 13 0 1 0 16 3Zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.3-4 .9 1-3.9-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-7.9c-.3-.1-1.9-.9-2.2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-2-.9-3.3-2.6-3.6-3-.3-.4 0-.6.2-.8l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4-.1-.6l-1-2.3c-.3-.6-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6 0 1.6 1.2 3.1 1.3 3.3.2.2 2.3 3.5 5.6 4.8.8.3 1.4.5 1.9.6.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4Z"></path>
+      </svg>
+    </a>
+
+    <!-- FORMULÁRIO -->
+
+    <dialog class="booking-dialog" id="bookingDialog" aria-labelledby="bookingTitle">
+
+      <div class="dialog-top">
+        <div>
+          <span class="kicker">REY´NAILS / AGENDAMENTO</span>
+
+          <h2 id="bookingTitle">
+            Seu momento <em>especial.</em>
+          </h2>
+        </div>
+
+        <button type="button" class="icon-btn" id="closeBooking" aria-label="Fechar formulário">
+          ×
+        </button>
+      </div>
+
+      <p class="dialog-intro">
+        Escolha uma data de preferência.
+        O horário só será confirmado após
+        nossa resposta pelo WhatsApp.
+      </p>
+
+      <form id="bookingForm">
+
+        <label for="clientName">Seu nome *</label>
+
+        <input id="clientName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Como podemos te chamar?" required="">
+
+        <label for="clientService">Serviço *</label>
+
+        <select id="clientService" name="service" required="">
+          <option value="">Selecione um serviço</option>
+        </select>
+
+        <label for="clientDate">Data desejada *</label>
+
+        <input id="clientDate" name="date" type="date" required="">
+
+        <label for="clientPeriod">
+          Período de preferência *
+        </label>
+
+        <select id="clientPeriod" name="period" required="">
+          <option value="">Selecione um período</option>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          <option>Qualquer horário</option>
+        </select>
+
+        <label for="clientNotes">
+          Observações (opcional)
+        </label>
+
+        <textarea id="clientNotes" name="notes" rows="3" maxlength="300" placeholder="Ex.: quero levar uma referência de nail art"></textarea>
+
+        <button type="submit" class="btn btn-dark btn-submit">
+          Enviar solicitação pelo WhatsApp ↗
+        </button>
+
+        <p class="form-help">
+          A mensagem será aberta no WhatsApp
+          para você enviar. Não há reserva automática.
+        </p>
+
+        <p class="form-error" id="formError" role="alert" hidden=""></p>
+
+      </form>
+    </dialog>
+
+    <!-- AMPLIAR FOTOS -->
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto de inspiração ampliada">
+
+      <button type="button" class="lightbox-close" id="closeLightbox" aria-label="Fechar imagem">
+        ×
+      </button>
+
+      <img id="lightboxImage" alt="">
+      <p id="lightboxCaption"></p>
+
+    </dialog>
+
+
+
+  </body>
+
+</html>
